@@ -154,12 +154,13 @@ uint32_t outdiff[4][3] = {0};
 uint32_t outmask[4][3] = {0};
 
 
-
-outmask[0][0] = 0x8040000; outmask[0][1] = 0x80000000; 
+//output masks
+/*outmask[0][0] = 0x8040000; outmask[0][1] = 0x80000000; 
 outmask[2][2] = 0x80000100;
-outmask[3][2] = 0x4020000;
+outmask[3][2] = 0x4020000;*/
+  outmask[1][0] = 0x10000;
 
-//4 round.
+//4 round. input diff
 indiff[0][0] = 0x484ccc80;
 indiff[0][1] = 0x484cc800;
 indiff[0][2] = 0x484cc800;
